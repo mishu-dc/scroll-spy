@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'scroll-spy';
+  selected = "section2";
+
+  changeSelected(value:string){
+    if(value!=this.selected){
+      this.selected = value;
+    }
+  }
 }

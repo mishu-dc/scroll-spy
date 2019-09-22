@@ -1,0 +1,25 @@
+ul{
+    list-style: none;
+}
+
+ul li{
+    min-height: 50px;
+}
+
+.active{
+    color: red;
+}
+
+.left-panel{
+    float: left;
+    min-width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+
+.right-panel{
+    margin-left:310px;
+}
