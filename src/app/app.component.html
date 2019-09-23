@@ -1,46 +1,14 @@
-<div class="left-panel">
-  <ul>
-    <li (click)="selected='section1'"><a href="#section1" [ngClass]="(selected=='section1')?'active':''">Section 1</a></li>
-    <li (click)="selected='section2'"><a href="#section2" [ngClass]="(selected=='section2')?'active':''">Section 2</a></li>
-    <li (click)="selected='section3'"><a href="#section3" [ngClass]="(selected=='section3')?'active':''">Section 3</a></li>
-    <li (click)="selected='section4'"><a href="#section4" [ngClass]="(selected=='section4')?'active':''">Section 4</a></li>
-    <li (click)="selected='section5'"><a href="#section5" [ngClass]="(selected=='section5')?'active':''">Section 5</a></li>
-    <li (click)="selected='section6'"><a href="#section6" [ngClass]="(selected=='section6')?'active':''">Section 6</a></li>
-    <li (click)="selected='section7'"><a href="#section7" [ngClass]="(selected=='section7')?'active':''">Section 7</a></li>
-    <li (click)="selected='section8'"><a href="#section8" [ngClass]="(selected=='section8')?'active':''">Section 8</a></li>
-  </ul>
-</div>
+<nav class="left-panel">
+    <ul>
+        <li uniScrollItem="section1">Section 1</li>
+        <li uniScrollItem="section2">Section 2</li>
+        <li uniScrollItem="section3">Section 3</li>
+        <li uniScrollItem="section4">Section 4</li>
+    </ul>
+</nav>
 <div class="right-panel">
-  <div (mouseover)="changeSelected('section1')" >
-      <a name="section1"><b><i>Section 1</i></b></a>
-      <app-content></app-content>
-  </div>
-  <div (mouseover)="changeSelected('section2')">
-      <a name="section2"><b><i>Section 2</i></b></a>
-      <app-content></app-content>
-  </div>
-  <div (mouseover)="changeSelected('section3')">
-      <a name="section3"><b><i>Section 3</i></b></a>
-      <app-content></app-content>
-  </div>
-  <div (mouseover)="changeSelected('section4')">
-      <a name="section4"><b><i>Section 4</i></b></a>
-      <app-content></app-content>
-  </div>
-  <div (mouseover)="changeSelected('section5')">
-      <a name="section5"><b><i>Section 5</i></b></a>
-      <app-content></app-content>
-  </div>
-  <div (mouseover)="changeSelected('section6')"> 
-      <a name="section6"><b><i>Section 6</i></b></a>
-      <app-content></app-content>
-  </div>
-  <div (mouseover)="changeSelected('section7')">
-      <a name="section7"><b><i>Section 7</i></b></a>
-      <app-content></app-content>
-  </div>
-  <div (mouseover)="changeSelected('section8')">
-      <a name="section8"><b><i>Section 8</i></b></a>
-      <app-content></app-content>
-  </div>
+    <section uniScrollSpy="section1" style="height: 1000px;">Section 1</section>
+    <section uniScrollSpy="section2" style="height: 1000px;">Section 2</section>
+    <section uniScrollSpy="section3" style="height: 1000px;">Section 3</section>
+    <section uniScrollSpy="section4" style="height: 1000px;">Section 4</section>
 </div>
