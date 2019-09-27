@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ScrollSpyService } from '@uniprank/ngx-scrollspy';
 
 @Component({
   selector: 'app-root',
@@ -8,18 +7,7 @@ import { ScrollSpyService } from '@uniprank/ngx-scrollspy';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'scroll-spy';
-  selected = 'section2';
-
-  constructor(private _scrollSpyService: ScrollSpyService) {}
-
+  constructor() {}
   ngOnInit() {
-      this._scrollSpyService.setOffset('window', 100);
-  }
-
-  changeSelected(value: string) {
-    if (value !== this.selected) {
-      this.selected = value;
-    }
   }
 }

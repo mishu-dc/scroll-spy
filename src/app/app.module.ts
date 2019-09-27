@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { NgxScrollspyModule } from '@uniprank/ngx-scrollspy';
+import { InViewportModule } from '@thisissoon/angular-inviewport';
+import { ScrollSpyModule } from '@thisissoon/angular-scrollspy';
 
 import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
@@ -13,7 +14,8 @@ import { ContentComponent } from './content/content.component';
   ],
   imports: [
     BrowserModule,
-    NgxScrollspyModule.forRoot()
+    InViewportModule, 
+    ScrollSpyModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
